@@ -1,0 +1,11 @@
+# dependencies
+node_modules
+
+# Playwright artifacts
+playwright-report
+test-results
+
+# OS / editor
+.DS_Store
+.env
+

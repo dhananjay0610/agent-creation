@@ -1,0 +1,2 @@
+export const SIGN_UP_VISIBILITY_TIMEOUT_MS = 15_000;
+

@@ -1,36 +1,45 @@
-# Playwright TypeScript Starter
+Playwright Automation Test – TypeScript
+Overview
 
-Minimal Playwright setup in TypeScript with an example smoke test.
+This repository contains an automated test suite developed as part of a technical assessment.
+The tests are written using Playwright with TypeScript and include two test cases based on the provided requirements.
 
-## Prerequisites
+Tech Stack
 
-- Node.js 18+ recommended
+Language: TypeScript
 
-## Setup
+Framework: Playwright Test
 
-```bash
+Browsers: Chromium (configurable)
+
+Test Coverage
+
+Test Case 1 and 2: Validates the primary user flow as specified in the assignment
+
+Setup & Run
+
+Install dependencies:
+
 npm install
 npx playwright install
-```
 
-`npx playwright install` downloads browsers. If you want system dependencies too (Linux CI), run `npx playwright install --with-deps`.
 
-## Running tests
+Run tests:
 
-- Headless default: `npm test`
-- Headed for debugging: `npm run test:headed`
-- UI mode: `npm run test:ui`
-- Codegen helper: `npm run codegen`
+npx playwright test
 
-You can override the target app with `PLAYWRIGHT_BASE_URL`:
 
-```bash
-PLAYWRIGHT_BASE_URL=http://localhost:3000 npm test
-```
+View report:
 
-## Files of interest
+npx playwright show-report
 
-- `playwright.config.ts` – global test config (baseURL, retries, reporters).
-- `tests/example.spec.ts` – sample smoke test hitting the Playwright docs.
-- `tsconfig.json` – TS settings for tests and config.
+Notes
 
+Tests are written with readability and maintainability in mind
+
+Stable locators and clear assertions are used
+
+The solution focuses on meeting the assignment requirements
+
+Author
+Dhananjay
